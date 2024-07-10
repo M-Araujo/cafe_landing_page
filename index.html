@@ -40,6 +40,67 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-soft-beige text-charcoal">
+
+
+    <nav class="bg-dark-brown text-white py-4 px-2">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-white text-2xl font-bold">MyWebsite</a>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white">About</a>
+                <a href="#" class="text-gray-300 hover:text-white">Services</a>
+                <a href="#" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#" class="block text-gray-300 hover:text-white p-2">Home</a>
+            <a href="#" class="block text-gray-300 hover:text-white p-2">About</a>
+            <a href="#" class="block text-gray-300 hover:text-white p-2">Services</a>
+            <a href="#" class="block text-gray-300 hover:text-white p-2">Contact</a>
+        </div>
+    </nav>
+
+
+  <!--
+    <section class="relative bg-cover bg-center h-screen" style="background-image: url('assets/banner.webp');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to [Restaurant/Cafe Name]</h1>
+            <p class="text-lg md:text-2xl font-playfair-display text-white mb-6">Experience the best dining in [Location]</p>
+            <a href="#menu" class="bg-brick-red text-white py-3 px-6 rounded-lg font-montserrat text-lg md:text-xl">View Our Menu</a>
+        </div>
+    </section>
+-->
+
+
+<!--
+<section class="relative bg-cover bg-center h-screen pt-20" style="background-image: url('assets/banner.webp');">
+    <div class="container mx-auto w-2/4  flex flex-col justify-center items-center relative z-10 text-center p-8 rounded-lg bg-soft-beige bg-opacity-50 backdrop-filter backdrop-blur-lg">
+        <h1 class="text-4xl md:text-6xl font-playfair-display text-black mb-4">Welcome to our [cafe]</h1>
+        <p class="text-lg md:text-2xl font-playfair-display text-black mb-6">Experience the best dining in [Location]</p>
+        <a href="#menu" class="bg-brick-red text-black py-3 px-6 rounded-lg font-montserrat text-lg md:text-xl">View Our Menu</a>
+    </div>
+</section>
+-->
+
+<section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/banner.webp');">
+    <div class="absolute inset-0"></div>
+    <div class="relative z-10 bg-beige bg-opacity-80 backdrop-filter backdrop-blur-lg p-8 rounded-lg text-center">
+        <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to [Cafe]</h1>
+        <p class="text-lg md:text-2xl font-playfair-display text-white mb-6">Experience the best dining in [Location]</p>
+        <a href="#menu" class="bg-brick-red text-white py-3 px-6 rounded-lg font-montserrat text-lg md:text-xl">View Our Menu</a>
+    </div>
+</section>
+
+
+
     <!-- Menu Section -->
     <section id="menu" class="py-12">
         <div class="container mx-auto text-center">
@@ -50,21 +111,21 @@
                     <img src="assets/dish1.webp" alt="Dish 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
                     <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Dish Name 1</h3>
                     <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p class="text-lg font-semibold mt-4 text-dark-brown">$12.99</p>
+         
                 </div>
                 <!-- Menu Item 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     <img src="assets/dish2.webp" alt="Dish 2" class="w-full h-48 object-cover rounded-t-lg mb-4">
                     <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Dish Name 2</h3>
                     <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p class="text-lg font-semibold mt-4 text-dark-brown">$15.99</p>
+        
                 </div>
                 <!-- Menu Item 3 -->
                 <div class="bg-white p-6 rounded-lg shadow-lg">
                     <img src="assets/dish3.webp" alt="Dish 3" class="w-full h-48 object-cover rounded-t-lg mb-4">
                     <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Dish Name 3</h3>
                     <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p class="text-lg font-semibold mt-4 text-dark-brown">$18.99</p>
+         
                 </div>
             </div>
             <div class="mt-12">
@@ -96,18 +157,32 @@
             color: #333333;
         }
 
-        .text-dark-brown {
-            color: #4A2C2A;
-        }
-
-        .text-brick-red {
-            color: #B33F40;
-        }
-
         .bg-brick-red {
             background-color: #B33F40;
         }
+
+        .bg-olive-green {
+            background-color: #8A9A5B;
+        }
+
+        .hover\:text-soft-beige:hover {
+            color: #F5F3E7;
+        }
+
+        .bg-dark-brown {
+            background-color: #4A2C2A;
+        }
+
     </style>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
 </body>
 </html>
 

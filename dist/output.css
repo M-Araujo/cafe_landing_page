@@ -616,6 +616,9 @@ h1,h2,h3,h4,h5,h6 {
 .swiper-horizontal > .swiper-pagination-bullets 
 .swiper-pagination-bullet, 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  height: 10px;
+  width: 10px;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
-  background-color: rgb(41 50 60 / var(--tw-bg-opacity));
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity));
 }
