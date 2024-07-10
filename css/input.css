@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    @apply text-secondary font-primary text-[17px] leading-8
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @apply text-primary font-bold text-[120%] 
+}
+
+.btn {
+    @apply rounded-full uppercase tracking-[1.2px] flex items-center justify-center px-4 py-2 text-sm font-bold text-primary bg-secondary hover:bg-primary transition-all
+}
+
+.btn-white {
+    @apply  text-primary bg-secondary bg-white hover:bg-primary transition-all
+}
+
+
+.swiper-horizontal > .swiper-pagination-bullets 
+.swiper-pagination-bullet, 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet  {
+
+    @apply bg-accent
+}
