@@ -36,27 +36,6 @@
     </nav>
 
 
-  <!--
-    <section class="relative bg-cover bg-center h-screen" style="background-image: url('assets/banner.webp');">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="container mx-auto h-full flex flex-col justify-center items-center relative z-10 text-center">
-            <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to [Restaurant/Cafe Name]</h1>
-            <p class="text-lg md:text-2xl font-playfair-display text-white mb-6">Experience the best dining in [Location]</p>
-            <a href="#menu" class="bg-brick-red text-white py-3 px-6 rounded-lg font-montserrat text-lg md:text-xl">View Our Menu</a>
-        </div>
-    </section>
--->
-
-
-<!--
-<section class="relative bg-cover bg-center h-screen pt-20" style="background-image: url('assets/banner.webp');">
-    <div class="container mx-auto w-2/4  flex flex-col justify-center items-center relative z-10 text-center p-8 rounded-lg bg-soft-beige bg-opacity-50 backdrop-filter backdrop-blur-lg">
-        <h1 class="text-4xl md:text-6xl font-playfair-display text-black mb-4">Welcome to our [cafe]</h1>
-        <p class="text-lg md:text-2xl font-playfair-display text-black mb-6">Experience the best dining in [Location]</p>
-        <a href="#menu" class="bg-brick-red text-black py-3 px-6 rounded-lg font-montserrat text-lg md:text-xl">View Our Menu</a>
-    </div>
-</section>
--->
 
 <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/banner.webp');">
     <div class="absolute inset-0"></div>
@@ -68,86 +47,54 @@
 </section>
 
 
-   <!-- Menu Section -->
-<!--
- 
-    <section id="menu" class="py-12">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-playfair-display font-bold mb-8 text-dark-brown">Our Menu</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-               
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="assets/dish1.webp" alt="Dish 1" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Dish Name 1</h3>
-                    <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-         
-                </div>
-              
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="assets/dish2.webp" alt="Dish 2" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Dish Name 2</h3>
-                    <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        
-                </div>
-              
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <img src="assets/dish3.webp" alt="Dish 3" class="w-full h-48 object-cover rounded-t-lg mb-4">
-                    <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Dish Name 3</h3>
-                    <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-         
-                </div>
-            </div>
-            <div class="mt-12">
-                <a href="#full-menu" class="inline-block bg-brick-red text-white py-3 px-6 rounded-lg font-montserrat font-semibold">View Full Menu</a>
-            </div>
-        </div>
-    </section>
-
--->
-
 <section id="menu" class="py-12 bg-orange-100">
-    <div class="container mx-auto text-center">
-        <h2 class="text-3xl font-playfair-display font-bold mb-8 text-dark-brown">Our Menu</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <div class="container mx-auto text-center px-40">
+      
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             <!-- Menu Item 1 -->
-            <div class=" p-6 rounded-lg ">
+            <div class="p-6 rounded-lg">
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish1.webp" alt="Dish 1" class="w-full h-full object-cover rounded-full">
                 </div>
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">About us</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-   
+                <div class="mt-12">
+                    <a href="#full-menu" class="inline-block btn-custom">View reservations</a>
+                </div>
             </div>
             <!-- Menu Item 2 -->
-            <div class=" p-6 rounded-lg ">
+            <div class="p-6 rounded-lg">
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish2.webp" alt="Dish 2" class="w-full h-full object-cover rounded-full">
                 </div>
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Menu</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          
+                <div class="mt-12">
+                    <a href="#full-menu" class="inline-block btn-custom">View reservations</a>
+                </div>
             </div>
             <!-- Menu Item 3 -->
-            <div class=" p-6 rounded-lg ">
+            <div class="p-6 rounded-lg">
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish3.webp" alt="Dish 3" class="w-full h-full object-cover rounded-full">
                 </div>
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Reservations</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    
+                <div class="mt-12">
+                    <a href="#full-menu" class="inline-block btn-custom">View reservations</a>
+                </div>
             </div>
-             <!-- Menu Item 4 -->
-             <div class=" p-6 rounded-lg ">
+            <!-- Menu Item 4 -->
+            <div class="p-6 rounded-lg">
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish4.webp" alt="Dish 4" class="w-full h-full object-cover rounded-full">
                 </div>
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Reservations 2</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    
+                <div class="mt-12">
+                    <a href="#full-menu" class="inline-block btn-custom">View reservations</a>
+                </div>
             </div>
-        </div>
-        <div class="mt-12">
-            <a href="#full-menu" class="inline-block bg-brick-red text-white py-3 px-6 rounded-lg font-montserrat font-semibold">View Full Menu</a>
         </div>
     </div>
 </section>
@@ -217,6 +164,14 @@
 
         .bg-dark-brown {
             background-color: #4A2C2A;
+        }
+        .btn-custom {
+            background-color: #C07248;
+            color: white;
+            color: white;
+            border-radius: 1.5rem; /* Increased border-radius for more rounded corners */
+            padding: 0.5rem 1rem; /* This is equivalent to py-2 px-4 in Tailwind */
+            font-size: 1rem;
         }
 
     </style>
