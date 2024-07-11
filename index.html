@@ -42,7 +42,10 @@
     <div class="relative z-10 bg-beige bg-opacity-80 backdrop-filter backdrop-blur-lg p-8 rounded-lg text-center">
         <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to [Cafe]</h1>
         <p class="text-lg md:text-2xl font-playfair-display text-white mb-6">Experience the best dining in [Location]</p>
-        <a href="#menu" class="bg-brick-red text-white py-3 px-6 rounded-lg font-montserrat text-lg md:text-xl">View Our Menu</a>
+        <!--<a href="#menu" class="bg-brick-red text-white py-3 px-6 rounded-lg font-montserrat text-lg md:text-xl">View Our Menu</a>-->
+        <div class="mt-12">
+            <a href="#full-menu" class="inline-block btn-custom-main">View our menu</a>
+        </div>
     </div>
 </section>
 
@@ -59,7 +62,7 @@
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">About us</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="mt-12">
-                    <a href="#full-menu" class="inline-block btn-custom">View reservations</a>
+                    <a href="#full-menu" class="inline-block btn-custom">Details</a>
                 </div>
             </div>
             <!-- Menu Item 2 -->
@@ -70,7 +73,7 @@
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Menu</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="mt-12">
-                    <a href="#full-menu" class="inline-block btn-custom">View reservations</a>
+                    <a href="#full-menu" class="inline-block btn-custom">Details</a>
                 </div>
             </div>
             <!-- Menu Item 3 -->
@@ -81,7 +84,7 @@
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Reservations</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="mt-12">
-                    <a href="#full-menu" class="inline-block btn-custom">View reservations</a>
+                    <a href="#full-menu" class="inline-block btn-custom">Details</a>
                 </div>
             </div>
             <!-- Menu Item 4 -->
@@ -89,10 +92,10 @@
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish4.webp" alt="Dish 4" class="w-full h-full object-cover rounded-full">
                 </div>
-                <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Reservations 2</h3>
+                <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Services</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <div class="mt-12">
-                    <a href="#full-menu" class="inline-block btn-custom">View reservations</a>
+                    <a href="#full-menu" class="inline-block btn-custom">Details</a>
                 </div>
             </div>
         </div>
@@ -165,13 +168,42 @@
         .bg-dark-brown {
             background-color: #4A2C2A;
         }
+        
         .btn-custom {
             background-color: #C07248;
-            color: white;
             color: white;
             border-radius: 1.5rem; /* Increased border-radius for more rounded corners */
             padding: 0.5rem 1rem; /* This is equivalent to py-2 px-4 in Tailwind */
             font-size: 1rem;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #A05D37; /* Darker shade for hover state */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for hover state */
+        }
+
+        .btn-custom:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(192, 114, 72, 0.5); /* Focus outline */
+        }
+   
+
+
+        .btn-custom-main {
+            background-color: #222E35;
+            color: white;
+            border-radius: 1.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-custom-main:hover {
+            background-color: #1A242A;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
     </style>
