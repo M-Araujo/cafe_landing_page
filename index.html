@@ -6,16 +6,22 @@
     <title>Restaurant Menu</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-soft-beige text-charcoal">
 
 <!-- Navigation -->
 <nav class="bg-dark-brown text-white py-4 px-20 sticky top-0 z-50">
     <div class="container mx-auto flex items-center justify-between">
-        <a href="#" class="text-white text-2xl font-bold flex items-center">
+        <!-- <a href="#" class="text-white text-2xl font-bold flex items-center">
             <img src="assets/logo.png" alt="Logo" class="h-8 mr-2">
             MyWebsite
+        </a> -->
+        <a href="#" class="text-white text-2xl flex items-center space-x-2 logo-title">
+            <img src="assets/logo.png" alt="MyWebsite Logo" class="h-8 w-auto">
+            <span class="logo-text">Our Cafe</span>
         </a>
+
         <div class="hidden md:flex space-x-4">
             <a href="#" class="text-gray-300 hover:text-white">Home</a>
             <a href="#" class="text-gray-300 hover:text-white">About</a>
@@ -42,8 +48,8 @@
 <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/banner.png');">
     <div class="absolute inset-0"></div>
     <div class="relative z-10 bg-beige bg-opacity-80 backdrop-filter backdrop-blur-lg p-8 rounded-lg text-center">
-        <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to [Cafe]</h1>
-        <p class="text-lg md:text-2xl font-playfair-display text-white mb-6">Experience the best dining in [Location]</p>
+        <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to our Cafe</h1>
+        <p class="text-lg md:text-2xl font-playfair-display text-white mb-6">Experience the best dining in Lisbon</p>
         <div class="mt-12">
             <a href="#full-menu" class="inline-block btn-custom-main">View our menu</a>
         </div>
@@ -201,6 +207,15 @@
     .menu {
         background-color: #EDD5B4;
     }
+
+    .logo-title {
+            font-family: 'Playfair Display', serif;
+        }
+        .logo-text {
+            font-family: 'Roboto', sans-serif;
+        }
+
+
 </style>
 
 <!-- Scripts -->
