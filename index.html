@@ -47,7 +47,7 @@
 <!-- Hero Section -->
 <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/banner.png');">
     <div class="absolute inset-0"></div>
-    <div class="relative z-10 bg-beige bg-opacity-80 backdrop-filter backdrop-blur-lg p-8 rounded-lg text-center">
+    <div class="relative z-10 bg-beige bg-opacity-85 backdrop-filter backdrop-blur-lg p-8 rounded-lg text-center">
         <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to our Cafe</h1>
         <p class="text-lg md:text-2xl font-playfair-display text-white mb-6">Experience the best dining in Lisbon</p>
         <div class="mt-12">
@@ -141,6 +141,15 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
+
+    body {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .loaded body {
+            opacity: 1;
+        }
+
     .font-lora {
         font-family: 'Lora', serif;
     }
@@ -220,6 +229,12 @@
 
 <!-- Scripts -->
 <script>
+
+window.addEventListener('load', () => {
+            document.documentElement.classList.add('loaded');
+        });
+
+        
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
 
