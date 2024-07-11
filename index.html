@@ -9,92 +9,90 @@
 </head>
 <body class="bg-soft-beige text-charcoal">
 
-
-    <nav class="bg-dark-brown text-white py-4 px-20">
-        <div class="container mx-auto flex items-center justify-between">
-            <a href="#" class="text-white text-2xl font-bold">MyWebsite</a>
-            <div class="hidden md:flex space-x-4">
-                <a href="#" class="text-gray-300 hover:text-white">Home</a>
-                <a href="#" class="text-gray-300 hover:text-white">About</a>
-                <a href="#" class="text-gray-300 hover:text-white">Services</a>
-                <a href="#" class="text-gray-300 hover:text-white">Contact</a>
-            </div>
-            <div class="md:hidden">
-                <button id="menu-btn" class="text-white focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
+<!-- Navigation -->
+<nav class="bg-dark-brown text-white py-4 px-20">
+    <div class="container mx-auto flex items-center justify-between">
+        <a href="#" class="text-white text-2xl font-bold">MyWebsite</a>
+        <div class="hidden md:flex space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white">Home</a>
+            <a href="#" class="text-gray-300 hover:text-white">About</a>
+            <a href="#" class="text-gray-300 hover:text-white">Services</a>
+            <a href="#" class="text-gray-300 hover:text-white">Contact</a>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#" class="block text-gray-300 hover:text-white p-2">Home</a>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">About</a>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">Services</a>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">Contact</a>
+        <div class="md:hidden">
+            <button id="menu-btn" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
-    </nav>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#" class="block text-gray-300 hover:text-white p-2">Home</a>
+        <a href="#" class="block text-gray-300 hover:text-white p-2">About</a>
+        <a href="#" class="block text-gray-300 hover:text-white p-2">Services</a>
+        <a href="#" class="block text-gray-300 hover:text-white p-2">Contact</a>
+    </div>
+</nav>
 
-
-
+<!-- Hero Section -->
 <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/banner.webp');">
     <div class="absolute inset-0"></div>
     <div class="relative z-10 bg-beige bg-opacity-80 backdrop-filter backdrop-blur-lg p-8 rounded-lg text-center">
         <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to [Cafe]</h1>
         <p class="text-lg md:text-2xl font-playfair-display text-white mb-6">Experience the best dining in [Location]</p>
-        <!--<a href="#menu" class="bg-brick-red text-white py-3 px-6 rounded-lg font-montserrat text-lg md:text-xl">View Our Menu</a>-->
         <div class="mt-12">
             <a href="#full-menu" class="inline-block btn-custom-main">View our menu</a>
         </div>
     </div>
 </section>
 
-
-<section id="menu" class="py-12 bg-orange-100">
-    <div class="container mx-auto text-center px-40">
-      
+<!-- Menu Section -->
+<section id="menu" class="py-12 menu">
+    <div class="container mx-auto text-center px-8 md:px-40">
+        <h2 class="text-3xl font-playfair-display font-bold mb-8 text-dark-brown">About us</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
             <!-- Menu Item 1 -->
-            <div class="p-6 rounded-lg">
+            <div class="p-6 rounded-lg ">
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish1.webp" alt="Dish 1" class="w-full h-full object-cover rounded-full">
                 </div>
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">About us</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="mt-12">
+                <div class="mt-4">
                     <a href="#full-menu" class="inline-block btn-custom">Details</a>
                 </div>
             </div>
             <!-- Menu Item 2 -->
-            <div class="p-6 rounded-lg">
+            <div class="p-6 rounded-lg ">
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish2.webp" alt="Dish 2" class="w-full h-full object-cover rounded-full">
                 </div>
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Menu</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="mt-12">
+                <div class="mt-4">
                     <a href="#full-menu" class="inline-block btn-custom">Details</a>
                 </div>
             </div>
             <!-- Menu Item 3 -->
-            <div class="p-6 rounded-lg">
+            <div class="p-6 rounded-lg  ">
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish3.webp" alt="Dish 3" class="w-full h-full object-cover rounded-full">
                 </div>
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Reservations</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="mt-12">
+                <div class="mt-4">
                     <a href="#full-menu" class="inline-block btn-custom">Details</a>
                 </div>
             </div>
             <!-- Menu Item 4 -->
-            <div class="p-6 rounded-lg">
+            <div class="p-6 rounded-lg ">
                 <div class="w-48 h-48 mx-auto mb-4">
                     <img src="assets/dish4.webp" alt="Dish 4" class="w-full h-full object-cover rounded-full">
                 </div>
                 <h3 class="text-2xl font-playfair-display font-semibold mb-2 text-brick-red">Services</h3>
                 <p class="text-lora">Brief description of the dish. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="mt-12">
+                <div class="mt-4">
                     <a href="#full-menu" class="inline-block btn-custom">Details</a>
                 </div>
             </div>
@@ -102,7 +100,7 @@
     </div>
 </section>
 
-
+<!-- Footer Section -->
 <footer class="bg-dark-brown text-white py-8">
     <div class="container mx-auto text-center">
         <!-- Contact Information -->
@@ -130,84 +128,79 @@
     </div>
 </footer>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+<!-- Styles -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
-        .font-lora {
-            font-family: 'Lora', serif;
-        }
+    .font-lora {
+        font-family: 'Lora', serif;
+    }
 
-        .font-montserrat {
-            font-family: 'Montserrat', sans-serif;
-        }
+    .font-montserrat {
+        font-family: 'Montserrat', sans-serif;
+    }
 
-        .font-playfair-display {
-            font-family: 'Playfair Display', serif;
-        }
+    .font-playfair-display {
+        font-family: 'Playfair Display', serif;
+    }
 
-        .bg-soft-beige {
-            background-color: #F5F3E7;
-        }
+    .bg-soft-beige {
+        background-color: #F5F3E7;
+    }
 
-        .text-charcoal {
-            color: #333333;
-        }
+    .text-charcoal {
+        color: #333333;
+    }
 
-        .bg-brick-red {
-            background-color: #B33F40;
-        }
+    .bg-brick-red {
+        background-color: #B33F40;
+    }
 
-        .bg-olive-green {
-            background-color: #8A9A5B;
-        }
+    .bg-dark-brown {
+        background-color: #4A2C2A;
+    }
 
-        .hover\:text-soft-beige:hover {
-            color: #F5F3E7;
-        }
+    .btn-custom {
+        background-color: #C07248;
+        color: white;
+        border-radius: 1.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .bg-dark-brown {
-            background-color: #4A2C2A;
-        }
-        
-        .btn-custom {
-            background-color: #C07248;
-            color: white;
-            border-radius: 1.5rem; /* Increased border-radius for more rounded corners */
-            padding: 0.5rem 1rem; /* This is equivalent to py-2 px-4 in Tailwind */
-            font-size: 1rem;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
+    .btn-custom:hover {
+        background-color: #A05D37;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-        .btn-custom:hover {
-            background-color: #A05D37; /* Darker shade for hover state */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for hover state */
-        }
+    .btn-custom:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(192, 114, 72, 0.5);
+    }
 
-        .btn-custom:focus {
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(192, 114, 72, 0.5); /* Focus outline */
-        }
-   
+    .btn-custom-main {
+        background-color: #222E35;
+        color: white;
+        border-radius: 1.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
+    .btn-custom-main:hover {
+        background-color: #1A242A;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-        .btn-custom-main {
-            background-color: #222E35;
-            color: white;
-            border-radius: 1.5rem;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+    .menu {
+        background-color: #EDD5B4;
+    }
+</style>
 
-        .btn-custom-main:hover {
-            background-color: #1A242A;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-    </style>
-
+<!-- Scripts -->
 <script>
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -215,7 +208,13 @@
     menuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
     });
+
+    const mobileLinks = mobileMenu.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
 </script>
 </body>
 </html>
-
