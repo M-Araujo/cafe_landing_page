@@ -10,9 +10,12 @@
 <body class="bg-soft-beige text-charcoal">
 
 <!-- Navigation -->
-<nav class="bg-dark-brown text-white py-4 px-20">
+<nav class="bg-dark-brown text-white py-4 px-20 sticky top-0 z-50">
     <div class="container mx-auto flex items-center justify-between">
-        <a href="#" class="text-white text-2xl font-bold">MyWebsite</a>
+        <a href="#" class="text-white text-2xl font-bold flex items-center">
+            <img src="assets/logo.png" alt="Logo" class="h-8 mr-2">
+            MyWebsite
+        </a>
         <div class="hidden md:flex space-x-4">
             <a href="#" class="text-gray-300 hover:text-white">Home</a>
             <a href="#" class="text-gray-300 hover:text-white">About</a>
@@ -20,14 +23,14 @@
             <a href="#" class="text-gray-300 hover:text-white">Contact</a>
         </div>
         <div class="md:hidden">
-            <button id="menu-btn" class="text-white focus:outline-none">
+            <button id="menu-btn" class="text-white focus:outline-none" aria-label="Toggle menu">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
         </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden">
+    <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 ease-in-out">
         <a href="#" class="block text-gray-300 hover:text-white p-2">Home</a>
         <a href="#" class="block text-gray-300 hover:text-white p-2">About</a>
         <a href="#" class="block text-gray-300 hover:text-white p-2">Services</a>
@@ -36,7 +39,7 @@
 </nav>
 
 <!-- Hero Section -->
-<section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/banner.webp');">
+<section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/banner.png');">
     <div class="absolute inset-0"></div>
     <div class="relative z-10 bg-beige bg-opacity-80 backdrop-filter backdrop-blur-lg p-8 rounded-lg text-center">
         <h1 class="text-4xl md:text-6xl font-playfair-display text-white mb-4">Welcome to [Cafe]</h1>
