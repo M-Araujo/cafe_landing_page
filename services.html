@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: #F5F3E7; /* Soft beige background */
+            color: #333; /* Charcoal color */
+            margin: 0;
+            padding: 0;
+        }
+
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .font-lora {
+            font-family: 'Lora', serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-soft-beige text-charcoal">
+
+    <!-- Header Section -->
+    <header class="bg-dark-brown text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-playfair">Our Services</h1>
+            <p class="mt-2 font-lora">Discover what we can do for you</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-12">
+        <div class="container mx-auto text-center px-4 md:px-0 lg:max-w-screen-lg">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Dine-In Experience -->
+                <div class="service bg-white shadow-lg rounded-lg p-6">
+                    <div class="mb-4">
+                        <img src="assets/services/experience.webp" alt="Dine-In Experience" class="w-full h-48 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-2 text-brick-red">Exceptional Dine-In Experience</h3>
+                    <p class="font-lora">Enjoy a cozy ambiance and top-notch service in our beautifully designed restaurant. Perfect for family dinners, romantic dates, or a night out with friends.</p>
+                </div>
+                <!-- Service 2: Takeout & Delivery -->
+                <div class="service bg-white shadow-lg rounded-lg p-6">
+                    <div class="mb-4">
+                        <img src="assets/services/takeout.webp" alt="Takeout & Delivery" class="w-full h-48 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-2 text-brick-red">Convenient Takeout & Delivery</h3>
+                    <p class="font-lora">Order your favorite dishes from the comfort of your home. Fast and reliable delivery ensures your meal arrives hot and fresh every time.</p>
+                </div>
+                <!-- Service 3: Catering Services -->
+                <div class="service bg-white shadow-lg rounded-lg p-6">
+                    <div class="mb-4">
+                        <img src="assets/services/catering.webp" alt="Catering Services" class="w-full h-48 object-cover rounded-md">
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-2 text-brick-red">Professional Catering Services</h3>
+                    <p class="font-lora">Make your event unforgettable with our catering services. Customizable menus, experienced staff, and attention to detail for any occasion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark-brown text-white py-8">
+        <div class="container mx-auto text-center">
+            <!-- Contact Information -->
+            <div class="mb-4">
+                <h4 class="text-2xl font-playfair mb-2">Contact Us</h4>
+                <p class="font-lora">123 Cozy Street, Cottage Town, CT 12345</p>
+                <p class="font-lora">Phone: (123) 456-7890</p>
+            </div>
+            <!-- Social Media Links -->
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <!-- Footer Note -->
+            <div class="text-xs font-lora">
+                <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+</body>
+</html>
