@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
 
@@ -27,6 +28,15 @@
         .font-montserrat {
             font-family: 'Montserrat', sans-serif;
         }
+
+        .service:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
     </style>
 </head>
 <body class="bg-soft-beige text-charcoal">
@@ -34,8 +44,8 @@
     <!-- Header Section -->
     <header class="bg-dark-brown text-white py-6">
         <div class="container mx-auto text-center">
-            <h1 class="text-4xl font-playfair">Our Services</h1>
-            <p class="mt-2 font-lora">Discover what we can do for you</p>
+            <h1 class="text-4xl font-playfair" data-aos="fade-down">Our Services</h1>
+            <p class="mt-2 font-lora" data-aos="fade-up">Discover what we can do for you</p>
         </div>
     </header>
 
@@ -44,7 +54,7 @@
         <div class="container mx-auto text-center px-4 md:px-0 lg:max-w-screen-lg">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Service 1: Dine-In Experience -->
-                <div class="service bg-white shadow-lg rounded-lg p-6">
+                <div class="service bg-white shadow-lg rounded-lg p-6" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="mb-4">
                         <img src="assets/services/experience.webp" alt="Dine-In Experience" class="w-full h-48 object-cover rounded-md">
                     </div>
@@ -52,7 +62,7 @@
                     <p class="font-lora">Enjoy a cozy ambiance and top-notch service in our beautifully designed restaurant. Perfect for family dinners, romantic dates, or a night out with friends.</p>
                 </div>
                 <!-- Service 2: Takeout & Delivery -->
-                <div class="service bg-white shadow-lg rounded-lg p-6">
+                <div class="service bg-white shadow-lg rounded-lg p-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                     <div class="mb-4">
                         <img src="assets/services/takeout.webp" alt="Takeout & Delivery" class="w-full h-48 object-cover rounded-md">
                     </div>
@@ -60,7 +70,7 @@
                     <p class="font-lora">Order your favorite dishes from the comfort of your home. Fast and reliable delivery ensures your meal arrives hot and fresh every time.</p>
                 </div>
                 <!-- Service 3: Catering Services -->
-                <div class="service bg-white shadow-lg rounded-lg p-6">
+                <div class="service bg-white shadow-lg rounded-lg p-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
                     <div class="mb-4">
                         <img src="assets/services/catering.webp" alt="Catering Services" class="w-full h-48 object-cover rounded-md">
                     </div>
