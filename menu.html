@@ -75,7 +75,7 @@
             <a href="index.html" class="text-gray-300 nav-link">Home</a>
             <a href="menu.html" class="text-gray-300 nav-link">Menu</a>
             <a href="services.html" class="text-gray-300 nav-link">Services</a>
-            <a href="#" class="text-gray-300 nav-link">Contact</a>
+            <a href="contact.html" class="text-gray-300 nav-link">Contact</a>
         </div>
     
     
@@ -89,13 +89,19 @@
         </div>
         
         <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 ease-in-out">
-            <a href="#" class="block text-gray-300 hover:text-white p-2">Home</a>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">About</a>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">Services</a>
-            <a href="#" class="block text-gray-300 hover:text-white p-2">Contact</a>
+            <a href="index.html" class="block text-gray-300 hover:text-white p-2">Home</a>
+            <a href="services.html" class="block text-gray-300 hover:text-white p-2">Services</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white p-2">Contact</a>
         </div>
     </nav>
 
+      <!-- Header Section -->
+      <header class="bg-dark-brown text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-playfair">Our Menu</h1>
+            <p class="mt-2 font-lora">Discover our delicious offerings</p>
+        </div>
+    </header>
 
     <!-- Menu Section -->
     <section id="menu" class="py-12" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true">
@@ -216,27 +222,33 @@
 <!-- Footer Section -->
 <footer class="bg-dark-brown text-white py-8">
     <div class="container mx-auto text-center">
-        <!-- Contact Information -->
-        <div class="mb-4">
-            <h4 class="text-2xl font-playfair-display mb-2">Contact Us</h4>
-            <p class="font-lora">123 Cozy Street, Cottage Town, CT 12345</p>
-            <p class="font-lora">Phone: (123) 456-7890</p>
-        </div>
-        <!-- Social Media Links -->
-        <div class="flex justify-center space-x-4 mb-4">
-            <a href="#" class="text-white hover:text-brick-red">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white hover:text-brick-red">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-white hover:text-brick-red">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-        <!-- Footer Note -->
-        <div class="text-xs font-lora">
-            <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+        <div class="flex flex-col items-center">
+            <div class="mb-4">
+                <a href="#" class="text-white text-2xl font-bold flex items-center space-x-2">
+                    <img src="assets/logo.png" alt="Our Cafe Logo" class="h-8 w-auto">
+                    <span class="font-playfair">Our Cafe</span>
+                </a>
+            </div>
+            <div class="mb-4">
+                <a href="index.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Home</a>
+                <a href="menu.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Menu</a>
+                <a href="services.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Services</a>
+                <a href="contact.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Contact</a>
+            </div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="text-xs font-lora">
+                <p>&copy; 2023 Our Cafe. All rights reserved.</p>
+            </div>
         </div>
     </div>
 </footer>

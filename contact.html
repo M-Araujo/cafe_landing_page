@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Our Cafe</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: #F5F3E7; /* Soft beige background */
+            color: #333; /* Charcoal color */
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .loaded body {
+            opacity: 1;
+        }
+
+        .font-lora {
+            font-family: 'Lora', serif;
+        }
+
+        .font-montserrat {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-playfair-display {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .bg-soft-beige {
+            background-color: #F5F3E7;
+        }
+
+        .text-charcoal {
+            color: #333333;
+        }
+
+        .bg-brick-red {
+            background-color: #B33F40;
+        }
+
+        .bg-dark-brown {
+            background-color: #4A2C2A;
+        }
+
+        .btn-custom {
+            background-color: #C07248;
+            color: white;
+            border-radius: 1.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #A05D37;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-custom:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(192, 114, 72, 0.5);
+        }
+
+        .btn-custom-main {
+            background-color: #222E35;
+            color: white;
+            border-radius: 1.5rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-custom-main:hover {
+            background-color: #1A242A;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu {
+            background-color: #EDD5B4;
+        }
+
+        .logo-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .logo-text {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .nav-link {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 4px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        .nav-link:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: white;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-link:hover:before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        .nav-link:hover {
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            font-family: 'Playfair Display', serif;
+            color: #B33F40;
+        }
+
+        .contact-form label {
+            font-family: 'Lora', serif;
+            font-weight: bold;
+            color: #4A2C2A;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+        }
+
+        .contact-form button {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-soft-beige text-charcoal">
+
+    <!-- Navigation -->
+    <nav class="bg-dark-brown text-white py-4 px-20 sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#" class="text-white text-2xl flex items-center space-x-2 logo-title">
+                <img src="assets/logo.png" alt="MyWebsite Logo" class="h-8 w-auto">
+                <span class="logo-text">Our Cafe</span>
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-300 nav-link">Home</a>
+                <a href="menu.html" class="text-gray-300 nav-link">Menu</a>
+                <a href="services.html" class="text-gray-300 nav-link">Services</a>
+                <a href="contact.html" class="text-gray-300 nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 ease-in-out">
+            <a href="index.html" class="block text-gray-300 hover:text-white p-2">Home</a>
+            <a href="menu.html" class="block text-gray-300 hover:text-white p-2">Menu</a>
+            <a href="services.html" class="block text-gray-300 hover:text-white p-2">Services</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white p-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-dark-brown text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-playfair">Contact Us</h1>
+            <p class="mt-2 font-lora">We would love to hear from you!</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-12" data-aos="fade-up">
+        <div class="container mx-auto px-4 md:px-0 lg:max-w-screen-lg">
+            <div class="contact-form">
+                <h2 class="text-3xl font-playfair mb-4">Get in Touch</h2>
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="name" class="block text-sm mb-2">Name</label>
+                        <input type="text" id="name" name="name" required class="p-2 border rounded w-full">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-sm mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="p-2 border rounded w-full">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-sm mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" required class="p-2 border rounded w-full"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-custom-main">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+ <!-- Footer Section -->
+<footer class="bg-dark-brown text-white py-8">
+    <div class="container mx-auto text-center">
+        <div class="flex flex-col items-center">
+            <div class="mb-4">
+                <a href="#" class="text-white text-2xl font-bold flex items-center space-x-2">
+                    <img src="assets/logo.png" alt="Our Cafe Logo" class="h-8 w-auto">
+                    <span class="font-playfair">Our Cafe</span>
+                </a>
+            </div>
+            <div class="mb-4">
+                <a href="index.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Home</a>
+                <a href="menu.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Menu</a>
+                <a href="services.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Services</a>
+                <a href="contact.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Contact</a>
+            </div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="text-xs font-lora">
+                <p>&copy; 2023 Our Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+
+        window.addEventListener('load', () => {
+            document.documentElement.classList.add('loaded');
+        });
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

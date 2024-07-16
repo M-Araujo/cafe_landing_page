@@ -128,6 +128,15 @@
             color: white;
             transform: translateY(-3px);
         }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body class="bg-soft-beige text-charcoal">
@@ -144,7 +153,7 @@
             <a href="index.html" class="text-gray-300 nav-link">Home</a>
             <a href="menu.html" class="text-gray-300 nav-link">Menu</a>
             <a href="services.html" class="text-gray-300 nav-link">Services</a>
-            <a href="#contact" class="text-gray-300 nav-link">Contact</a>
+            <a href="contact.html" class="text-gray-300 nav-link">Contact</a>
         </div>
 
         <div class="md:hidden">
@@ -160,7 +169,7 @@
         <a href="index.html" class="block text-gray-300 hover:text-white p-2">Home</a>
         <a href="menu.html" class="block text-gray-300 hover:text-white p-2">Menu</a>
         <a href="services.html" class="block text-gray-300 hover:text-white p-2">Services</a>
-        <a href="#contact" class="block text-gray-300 hover:text-white p-2">Contact</a>
+        <a href="contact.html" class="block text-gray-300 hover:text-white p-2">Contact</a>
     </div>
 </nav>
 
@@ -177,7 +186,7 @@
     <div class="container mx-auto text-center px-4 md:px-0 lg:max-w-screen-lg">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Service 1: Dine-In Experience -->
-            <div class="service bg-white shadow-lg rounded-lg p-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service bg-white shadow-lg rounded-lg p-6 card" data-aos="fade-up" data-aos-delay="100">
                 <div class="mb-4">
                     <img src="assets/services/experience.webp" alt="Dine-In Experience" class="w-full h-48 object-cover rounded-md">
                 </div>
@@ -185,7 +194,7 @@
                 <p class="font-lora">Enjoy a cozy ambiance and top-notch service in our beautifully designed restaurant. Perfect for family dinners, romantic dates, or a night out with friends.</p>
             </div>
             <!-- Service 2: Takeout & Delivery -->
-            <div class="service bg-white shadow-lg rounded-lg p-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service bg-white shadow-lg rounded-lg p-6 card" data-aos="fade-up" data-aos-delay="200">
                 <div class="mb-4">
                     <img src="assets/services/takeout.webp" alt="Takeout & Delivery" class="w-full h-48 object-cover rounded-md">
                 </div>
@@ -193,7 +202,7 @@
                 <p class="font-lora">Order your favorite dishes from the comfort of your home. Fast and reliable delivery ensures your meal arrives hot and fresh every time.</p>
             </div>
             <!-- Service 3: Catering Services -->
-            <div class="service bg-white shadow-lg rounded-lg p-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service bg-white shadow-lg rounded-lg p-6 card" data-aos="fade-up" data-aos-delay="300">
                 <div class="mb-4">
                     <img src="assets/services/catering.webp" alt="Catering Services" class="w-full h-48 object-cover rounded-md">
                 </div>
@@ -205,29 +214,35 @@
 </section>
 
 <!-- Footer Section -->
-<footer class="bg-dark-brown text-white py-8" id="contact">
+<footer class="bg-dark-brown text-white py-8">
     <div class="container mx-auto text-center">
-        <!-- Contact Information -->
-        <div class="mb-4">
-            <h4 class="text-2xl font-playfair mb-2">Contact Us</h4>
-            <p class="font-lora">123 Cozy Street, Cottage Town, CT 12345</p>
-            <p class="font-lora">Phone: (123) 456-7890</p>
-        </div>
-        <!-- Social Media Links -->
-        <div class="flex justify-center space-x-4 mb-4">
-            <a href="#" class="text-white hover:text-brick-red">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="#" class="text-white hover:text-brick-red">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" class="text-white hover:text-brick-red">
-                <i class="fab fa-twitter"></i>
-            </a>
-        </div>
-        <!-- Footer Note -->
-        <div class="text-xs font-lora">
-            <p>&copy; 2023 Restaurant Name. All rights reserved.</p>
+        <div class="flex flex-col items-center">
+            <div class="mb-4">
+                <a href="#" class="text-white text-2xl font-bold flex items-center space-x-2">
+                    <img src="assets/logo.png" alt="Our Cafe Logo" class="h-8 w-auto">
+                    <span class="font-playfair">Our Cafe</span>
+                </a>
+            </div>
+            <div class="mb-4">
+                <a href="index.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Home</a>
+                <a href="menu.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Menu</a>
+                <a href="services.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Services</a>
+                <a href="contact.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Contact</a>
+            </div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-white hover:text-brick-red">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+            <div class="text-xs font-lora">
+                <p>&copy; 2023 Our Cafe. All rights reserved.</p>
+            </div>
         </div>
     </div>
 </footer>
