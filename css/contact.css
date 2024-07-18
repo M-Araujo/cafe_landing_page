@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #F5F3E7; /* Soft beige background */
+    color: #333; /* Charcoal color */
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.loaded body {
+    opacity: 1;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-playfair-display {
+    font-family: 'Playfair Display', serif;
+}
+
+.bg-soft-beige {
+    background-color: #F5F3E7;
+}
+
+.text-charcoal {
+    color: #333333;
+}
+
+.bg-brick-red {
+    background-color: #B33F40;
+}
+
+.bg-dark-brown {
+    background-color: #4A2C2A;
+}
+
+.btn-custom {
+    background-color: #C07248;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #A05D37;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-custom:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(192, 114, 72, 0.5);
+}
+
+.btn-custom-main {
+    background-color: #222E35;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom-main:hover {
+    background-color: #1A242A;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    background-color: #EDD5B4;
+}
+
+.logo-title {
+    font-family: 'Playfair Display', serif;
+}
+
+.logo-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.nav-link:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.contact-form label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #4A2C2A;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #B33F40;
+    box-shadow: 0 0 5px rgba(179, 63, 64, 0.5);
+}
+
+.contact-form button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+
+    transform: translateY(-3px);
+}
+
+ /* Header and footer link hover animations */
+ .nav-link, .footer-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:before, .footer-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover:before, .footer-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.nav-link:hover, .footer-link:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+        .loaded body {
+            opacity: 1;
+        }
+
+        .sticky-nav {
+            background-color: #4A2C2A; /* Dark brown background for sticky nav */
+        }
+
+        .btn-custom {
+        background-color: #C07248;
+        color: white;
+        border-radius: 1.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-custom:hover {
+        background-color: #A05D37;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-custom:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(192, 114, 72, 0.5);
+    }

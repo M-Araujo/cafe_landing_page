@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #F5F3E7; /* Soft beige background */
+    color: #333; /* Charcoal color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-custom-main {
+background-color: #222E35; /* Dark background color */
+color: white; /* White text color */
+border-radius: 1.5rem; /* Rounded corners */
+padding: 0.5rem 1rem; /* Padding */
+font-size: 1rem; /* Font size */
+text-transform: uppercase; /* Uppercase text */
+transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-custom-main:hover {
+background-color: #1A242A; /* Darker shade on hover */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}

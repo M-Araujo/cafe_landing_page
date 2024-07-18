@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lora', serif;
+    background-color: #F5F3E7; /* Soft beige background */
+    color: #333; /* Charcoal color */
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-lora {
+    font-family: 'Lora', serif;
+}
+
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description-text {
+    font-size: 1.125rem; /* Larger font size for description */
+}
+
+.ingredients-text {
+    font-size: 0.875rem; /* Smaller font size for ingredients */
+}
+
+.font-playfair-display {
+font-family: 'Playfair Display', serif;
+}
+
+.bg-soft-beige {
+background-color: #F5F3E7;
+}
+
+.text-charcoal {
+color: #333333;
+}
+
+.bg-brick-red {
+background-color: #B33F40;
+}
+
+.bg-dark-brown {
+background-color: #4A2C2A;
+}
