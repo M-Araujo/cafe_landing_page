@@ -197,30 +197,30 @@ body {
     transform: translateY(-3px);
 }
 
-        .loaded body {
-            opacity: 1;
-        }
+.loaded body {
+    opacity: 1;
+}
 
-        .sticky-nav {
-            background-color: #4A2C2A; /* Dark brown background for sticky nav */
-        }
+.sticky-nav {
+    background-color: #4A2C2A; /* Dark brown background for sticky nav */
+}
 
-        .btn-custom {
-        background-color: #C07248;
-        color: white;
-        border-radius: 1.5rem;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        text-transform: uppercase;
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    }
+.btn-custom {
+    background-color: #C07248;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .btn-custom:hover {
-        background-color: #A05D37;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
+.btn-custom:hover {
+    background-color: #A05D37;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-    .btn-custom:focus {
-        outline: none;
-        box-shadow: 0 0 0 3px rgba(192, 114, 72, 0.5);
-    }
+.btn-custom:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(192, 114, 72, 0.5);
+}

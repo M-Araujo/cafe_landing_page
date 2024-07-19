@@ -3,17 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <title>404 - Our Cafe</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/header&footer.css">
 </head>
-<body>
-    <div class="text-center">
-        <h1 class="text-6xl font-bold font-montserrat mb-4 text-brick-red">404</h1>
-        <p class="text-2xl font-lora mb-8">Oops! The page you're looking for doesn't exist.</p>
-        <a href="index.html" class="btn-custom-main">Go Back Home</a>
-    </div>
+<body class="bg-soft-beige text-charcoal">
 
+    <!-- Navigation -->
+    <nav class="bg-dark-brown text-white py-4 px-20 sticky top-0 z-50">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="index.html" class="text-white text-2xl flex items-center space-x-2 logo-title">
+                <img src="assets/logo.png" alt="MyWebsite Logo" class="h-8 w-auto">
+                <span class="logo-text">Our Cafe</span>
+            </a>
+            <div class="hidden md:flex space-x-4">
+                <a href="index.html" class="text-gray-300 nav-link">Home</a>
+                <a href="menu.html" class="text-gray-300 nav-link">Menu</a>
+                <a href="services.html" class="text-gray-300 nav-link">Services</a>
+                <a href="contact.html" class="text-gray-300 nav-link">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-white focus:outline-none" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden transition-all duration-300 ease-in-out">
+            <a href="index.html" class="block text-gray-300 hover:text-white p-2">Home</a>
+            <a href="menu.html" class="block text-gray-300 hover:text-white p-2">Menu</a>
+            <a href="services.html" class="block text-gray-300 hover:text-white p-2">Services</a>
+            <a href="contact.html" class="block text-gray-300 hover:text-white p-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-dark-brown text-white py-6">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-playfair">Something is wrong.</h1>
+            <p class="mt-2 font-lora"></p>
+        </div>
+    </header>
+
+    <section id="404" class="py-12" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true">
+        <div class="text-center">
+            <h1 class="text-6xl font-bold font-montserrat mb-4 text-brick-red">404</h1>
+            <p class="text-2xl font-lora mb-8">The page you're looking for doesn't exist.</p>
+            <a href="index.html" class="btn-custom-main">Go Back Home</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark-brown text-white py-8">
+        <div class="container mx-auto text-center">
+            <div class="flex flex-col items-center">
+                <div class="mb-4">
+                    <a href="#" class="text-white text-2xl font-bold flex items-center space-x-2">
+                        <img src="assets/logo.png" alt="Our Cafe Logo" class="h-8 w-auto">
+                        <span class="font-playfair">Our Cafe</span>
+                    </a>
+                </div>
+                <div class="mb-4">
+                    <a href="index.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Home</a>
+                    <a href="menu.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Menu</a>
+                    <a href="services.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Services</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-brick-red mx-2 footer-link">Contact</a>
+                </div>
+                <div class="flex justify-center space-x-4 mb-4">
+                    <a href="#" class="text-white hover:text-brick-red">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-brick-red">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-brick-red">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="text-xs font-lora">
+                    <p>&copy; 2023 Our Cafe. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="js/main.js"></script>
 
 </body>

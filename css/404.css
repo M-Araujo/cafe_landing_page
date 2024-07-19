@@ -33,3 +33,33 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 background-color: #1A242A; /* Darker shade on hover */
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.nav-link:hover {
+    color: white;
+    transform: translateY(-3px);
+}
