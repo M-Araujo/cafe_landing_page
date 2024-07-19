@@ -38,7 +38,7 @@ modern framework.
 - **No Backend**: This project does not include any backend 
   functionality.
 - **No Form Validation**: Forms included in the project do 
-  not have validation; it is purely HTML and CSS.
+  not have validation; it is mainly HTML and CSS.
 
 ------------------------------------------------------------
                             Purpose
@@ -61,12 +61,15 @@ To set up and run this project, you will need the following:
    - Ensure you have Node.js installed. You can download it from:
      https://nodejs.org/
 
+     - Note: Node.js version at current time: v20.15.1
+
 2. **npm (Node Package Manager)**:
    - npm comes bundled with Node.js. Verify installation by running:
      ```
      node -v
      npm -v
      ```
+     - Note: npm version at current time: 10.8.2
 
 3. **Tailwind CSS**:
    - Tailwind CSS is used for styling the project.
@@ -106,10 +109,7 @@ To set up and run this project, you will need the following:
   ```
 
 5. **Open the Project in Your Browser**:
-- Open your browser and navigate to:
-  ```
-  http://127.0.0.1:8080
-  ```
+- Open the index page on your browser, or wait for the development server to open it automatically.
 
 ------------------------------------------------------------
 Project structure:
@@ -140,3 +140,13 @@ Project/
 ├── contact.html
 ├── package.json
 └── package-lock.json
+
+
+
+
+============================================================
+                        Credits
+============================================================
+
+### Images
+- Generated via OpenAI's DALL·E.
